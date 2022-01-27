@@ -14,109 +14,112 @@
 
 <body>
     <h1>User Registeration</h1>
-    <fieldset id="creds">
-        <legend>Create User ID and Password</legend>
-        <p>
-            <label for="email">Email: </label>
-            <span class="required">*</span><input type="email" placeholder="Email" id="email" required>
-        </p>
-        <p>
-            <label for="password">Password: </label>
-            <span class="required">*</span><input type="password" placeholder="Password" id="password" required>
-            <br><span id="validate-password">At least 8 characters required</span>
-        </p>
-        <p>
-            <label for="confirmpassword">Confirm Password: </label>
-            <span class="required">*</span><input type="password" placeholder="Confirm Password" id="confirmpassword" required>
-        </p>
-    </fieldset>
-    <br>
-    <fieldset id="info">
-        <legend>Personal Information</legend>
-        <img src="dp.png" alt="dp">
-        <p>
-            <label for="fname">First Name: </label>
-            <span class="required">*</span><input type="text" id="fname" placeholder="Enter First Name" required>
-        </p>
-        <p>
-            <label for="lname">Last Name: </label>
-            <span class="required">*</span><input type="text" id="lname" placeholder="Enter Last Name">
-        </p>
-        <p>
-            Gender:
-            <span>
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Male</label>
-            </span>
-            <span>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Female</label>
-            </span>
-            <span>
-                <input type="radio" name="gender" id="others" value="others">
-                <label for="others">Others</label>
-            </span>
-        </p>
-        <p>
-            <label for="date">
-                Birthday: <span class="required">*</span>
+    <form action="submit.html">
+        <fieldset id="creds">
+            <legend>Create User ID and Password</legend>
+            <p>
+                <label for="email">Email: </label>
+                <span class="required">*</span><input type="email" placeholder="Email" id="email" required>
+            </p>
+            <p>
+                <label for="password">Password: </label>
+                <span class="required">*</span><input type="password" placeholder="Password" id="password" required>
+                <br><span id="validate-password">At least 8 characters required</span>
+            </p>
+            <p>
+                <label for="confirmpassword">Confirm Password: </label>
+                <span class="required">*</span><input type="password" placeholder="Confirm Password" id="confirmpassword" required>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset id="info">
+            <legend>Personal Information</legend>
+            <img src="dp.png" alt="dp">
+            <p>
+                <label for="fname">First Name: </label>
+                <span class="required">*</span><input type="text" id="fname" placeholder="Enter First Name" required>
+            </p>
+            <p>
+                <label for="lname">Last Name: </label>
+                <span class="required">*</span><input type="text" id="lname" placeholder="Enter Last Name">
+            </p>
+            <p>
+                Gender:
+                <span>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                </span>
+                <span>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </span>
+                <span>
+                    <input type="radio" name="gender" id="others" value="others">
+                    <label for="others">Others</label>
+                </span>
+            </p>
+            <p>
+                <label for="date">
+                    Birthday: <span class="required">*</span>
+                </label>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label for="country">Country: </label>
+                <input type="text" name="country" id="country" placeholder="Country">
+            </p>
+            <p>
+                <label for="address">Address: <br><textarea name="address" id="address" cols="30" rows="10"></textarea></label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="degree">Degree:
+                <select name="degree" id="">Degree
+                    <option value="">Enter Degree</option>
+                    <option value="be">B.E.</option>
+                    <option value="btech">BTech</option>
+                    <option value="bsc">Bsc</option>
+                    <option value="bcom">Bcom</option>
+                </select>
             </label>
-            <input type="date" name="date" id="date">
-        </p>
-        <p>
-            <label for="country">Country: </label>
-            <input type="text" name="country" id="country" placeholder="Country">
-        </p>
-        <p>
-            <label for="address">Address: <br><textarea name="address" id="address" cols="30" rows="10"></textarea></label>
-        </p>
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Educational Details</legend>
-        <label for="degree">Degree: 
-            <select name="degree" id="">Degree
-                <option value="">Enter Degree</option>
-                <option value="be">B.E.</option>
-                <option value="btech">BTech</option>
-                <option value="bsc">Bsc</option>
-                <option value="bcom">Bcom</option>
-            </select>
-        </label>
-        <p>
-            <label for="course">Certified course: <br><textarea name="course" id="course" cols="30" rows="10"></textarea></label>
-        </p>
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Work Experience</legend>
-        <p>
-            Knowledge in: 
-            <span>
-                <input type="checkbox" name="knowledge" id="html" value="html">
-                <label for="html">HTML</label>
-            </span>
-            <span>
-                <input type="checkbox" name="knowledge" id="net" value="net">
-                <label for="net">NET</label>
-            </span>
-            <span>
-                <input type="checkbox" name="knowledge" id="java" value="java">
-                <label for="java">JAVA</label>
-            </span>
-            <span>
-                <input type="checkbox" name="knowledge" id="php" value="php">
-                <label for="php">PHP</label>
-            </span>
-        </p>
-        <p>
-            <label for="years">Years of experience</label>
-            <input type="number" name="years" id="years" min="1">
-        </p>
-    </fieldset>
-    <div class="required">* Required Field</div>
-    <br>
-    <input type="submit" id="submit">
+            <p>
+                <label for="course">Certified course: <br><textarea name="course" id="course" cols="30" rows="10"></textarea></label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <p>
+                Knowledge in:
+                <span>
+                    <input type="checkbox" name="knowledge" id="html" value="html">
+                    <label for="html">HTML</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="knowledge" id="net" value="net">
+                    <label for="net">NET</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="knowledge" id="java" value="java">
+                    <label for="java">JAVA</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="knowledge" id="php" value="php">
+                    <label for="php">PHP</label>
+                </span>
+            </p>
+            <p>
+                <label for="years">Years of experience</label>
+                <input type="number" name="years" id="years" min="1">
+            </p>
+        </fieldset>
+        <div class="required">* Required Field</div>
+        <br>
+        <input type="submit" id="submit">
+        <input type="reset" id="reset">
+    </form>
     <footer>
         Submitted by: Sethi Jyotir Aditya<br>
         Roll: 20051222
