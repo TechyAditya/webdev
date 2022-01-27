@@ -2,29 +2,36 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0 10%;
 }
+
 h1 {
     text-align: center;
 }
+
 #validate-password {
     font-size: 0.8em;
     font-weight: 300;
 }
+
 footer {
     font-size: 1.2em;
     font-weight: 300;
     margin-top: 15px;
     color: #535353
 }
+
 .required {
     color: red;
 }
+
 fieldset {
     border-radius: 10px;
 }
+
 legend {
     font-size: 1.5em;
     font-weight: 700;
 }
+
 img {
     position: absolute;
     width: 200px;
@@ -32,6 +39,7 @@ img {
     right: 11%;
     border-radius: 50%;
 }
+
 #submit {
     font-size: 1.5em;
     font-weight: 700;
@@ -39,7 +47,8 @@ img {
     color: white;
     border-radius: 5%;
 }
-#reset{
+
+#reset {
     font-size: 1.5em;
     font-weight: 700;
     background-color: rgb(172, 0, 0);

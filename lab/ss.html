@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2005085 Q2</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Create user id and password</b></legend>
+            <p>User Id:* <input type="text" name="userid" required></p>
+            <p>Password:* <input type="password" name="password" id="password" required></p>
+            format: combination of numericals,alphabet and special character,minimum 8 and maximum 16 character
+            <p>Confirm Password:* <input type="password" name="password" id="password" required></p>
+        </fieldset>
+        <fieldset>
+            <legend><b>Personal information</b></legend>
+            <img src="DP.jpg" alt="This is an image" width="140" align="right">
+            <p>First Name:* <input type="text" name="name" id="name" required></p>
+            <p>Last Name: <input type="text" name="name" id="name"></p>
+            <p> Male <input type="radio" name="Gender" id="gender" required> Female <input type="radio" name="Gender"
+                    id="gender" required></p>
+            <p>Birthday:* <input type="date" name="DOB" id="DOB" required></p>
+            <p>Country: <input type="text" name="country" id="country"></p>
+            <p>Email:* <input type="email" name="email" id="email" required></p>
+            <p>Address: <textarea name="address" id="address" cols="165" rows="5"></textarea></p>
+        </fieldset>
+        <fieldset>
+            <legend><b>Educational Details</b></legend>
+            <p>Degree:*
+                <select name="degree_type" id="degree_type" required>
+                    <option value="">--select a degree--</option>></option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="Btech">Btech</option>
+                    <option value="PHD">PHD</option>
+                    <option value="Honors">Honors</option>
+                </select>
+            </p>
+            <p>Certified Courses, if any: <textarea name="course" id="course" cols="165" rows="5"></textarea></p>
+        </fieldset>
+        <fieldset>
+            <legend><b>Work Experience</b></legend>
+            <p>Knowledge: <input type="radio" name="HTML" id="HTML">HTML <input type="radio" name=".NET" id=".NET">.NET
+                <input type="radio" name="JAVA" id="JAVA">JAVA <input type="radio" name="PHP" id="PHP">PHP
+            </p>
+            <P>Years of Experience: <input type="number" name="experience" id="experience"></P>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
